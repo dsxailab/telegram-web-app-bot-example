@@ -21,8 +21,6 @@
             background-color: var(--bg-color);
             color: var(--tg-theme-text-color, #222);
             font-size: 14px;
-            margin: 0;
-            padding: 0;
             color-scheme: var(--tg-color-scheme);
         }
         body.gray {
@@ -208,77 +206,7 @@
         .status_need {
             display: none;
         }
-        #fixed_wrap {
-            position: fixed;
-            left: 0;
-            right: 0;
-            top: 0;
-            transform: translateY(100vh);
-        }
-        .viewport-container {
-            position: fixed;
-            left: 0;
-            right: 0;
-            top: 0;
-            height: var(--tg-viewport-stable-height, 100vh);
-            transition: height .2s ease;
-        }
-        .viewport-container .main-container {
-            position: absolute;
-            left: 0;
-            right: 0;
-            top: 0;
-            bottom: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .viewport-container .main-container button {
-            width: auto;
-        }
-        .viewport-border,
-        .viewport-stable_border {
-            position: fixed;
-            left: 0;
-            right: 0;
-            top: 0;
-            height: var(--tg-viewport-height, 100vh);
-            pointer-events: none;
-        }
-        .viewport-stable_border {
-            height: var(--tg-viewport-stable-height, 100vh);
-        }
-        .viewport-border:before,
-        .viewport-stable_border:before {
-            content: attr(text);
-            display: inline-block;
-            position: absolute;
-            background: gray;
-            right: 0;
-            top: 0;
-            font-size: 7px;
-            padding: 2px 4px;
-            vertical-align: top;
-        }
-        .viewport-stable_border:before {
-            background: green;
-            left: 0;
-            right: auto;
-        }
-        .viewport-border:after,
-        .viewport-stable_border:after {
-            content: '';
-            display: block;
-            position: absolute;
-            left: 0;
-            right: 0;
-            top: 0;
-            bottom: 0;
-            border: 2px dashed gray;
-        }
-        .viewport-stable_border:after {
-            border-color: green;
-        }
+        
 
         small {
             font-size: 12px;
